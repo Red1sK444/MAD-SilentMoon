@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue">
+
+    <ImageView
+        android:id="@+id/welcomeBackgroundImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-27dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeDescriptionTextView"
+        app:srcCompat="@drawable/bg_welcome" />
+
+    <Button
+        android:id="@+id/welcomeGetStartedButton"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/button_almost_white"
+        android:text="@string/sign_up_welcome_get_started"
+        android:textColor="@color/text_black"
+        app:layout_constraintBottom_toBottomOf="@+id/welcomeBackgroundImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hiWelcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:minLines="2"
+        android:text="@string/welcome_hi_to_silent_moon"
+        android:textAlignment="center"
+        android:textColor="@color/text_beige"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeDescriptionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTitleTextView"
+        app:lineHeight="41dp" />
+
+    <TextView
+        android:id="@+id/welcomeDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="22dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:minLines="2"
+        android:text="@string/welcome_explore_the_app"
+        android:textAlignment="center"
+        android:textColor="@color/text_white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hiWelcomeTextView"
+        app:layout_constraintBottom_toTopOf="@id/welcomeBackgroundImageView"
+        app:lineHeight="27dp" />
+
+    <TextView
+        android:id="@+id/welcomeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="96dp"
+        android:letterSpacing="0.24"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hiWelcomeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:lineHeight="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable-v24/ic_radio_button_black_text_selector.xml" value="0.46794871794871795" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/bg_edit_text_grey.xml" value="0.5069444444444444" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/bg_music.xml" value="0.46794871794871795" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/bg_music_v2.xml" value="0.3402777777777778" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/bg_sleep.xml" value="0.3402777777777778" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/bg_tab_indicator.xml" value="0.4995433789954338" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/bg_time_picker.xml" value="0.47846153846153844" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/bg_welcome.xml" value="0.3402777777777778" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/bottom_nav_item_bg_selector.xml" value="0.4859375" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/custom_item_layout.xml" value="0.37407407407407406" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/edit_text_grey_background.xml" value="0.5703125" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_black_pause.xml" value="0.46794871794871795" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_bottom_nav_home_selector.xml" value="0.20833333333333334" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_bottom_nav_meditate_selector.xml" value="0.20833333333333334" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_bottom_nav_music_selector.xml" value="0.20833333333333334" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_bottom_nav_selector.xml" value="0.4859375" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_bottom_nav_sleep_selector.xml" value="0.20833333333333334" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_bottom_nav_user_selector.xml" value="0.20833333333333334" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_chip_bg_selector.xml" value="0.34739583333333335" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_chip_selector.xml" value="0.5703125" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_chip_text_selector.xml" value="0.34739583333333335" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_home.xml" value="0.5703125" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_home_selected.xml" value="0.38333333333333336" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_meditate_all_selector.xml" value="0.3398148148148148" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_meditate_anxious_selector.xml" value="0.3398148148148148" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_meditate_kids.xml" value="0.3398148148148148" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_meditate_kids_selector.xml" value="0.3398148148148148" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_meditate_my_selector.xml" value="0.37393162393162394" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_meditate_selected.xml" value="0.36302083333333335" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_meditate_sleep_selector.xml" value="0.3398148148148148" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_music_seekbar.xml" value="0.46794871794871795" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_music_seekbar_thumb.xml" value="0.31157407407407406" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_music_v2_seekbar.xml" value="0.46794871794871795" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_ripple_fab.xml" value="0.5009259259259259" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_selected.xml" value="0.4859375" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_sign_in_google.xml" value="0.427734375" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_sleep_all_selector.xml" value="0.5069444444444444" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_sleep_anxious_selector.xml" value="0.5069444444444444" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_sleep_kids_selector.xml" value="0.5069444444444444" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_sleep_my_selector.xml" value="0.5069444444444444" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/ic_sleep_sleep_selector.xml" value="0.5069444444444444" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_chip.xml" value="0.5703125" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_choose_topic_background.xml" value="0.5703125" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_media_grey_dot.xml" value="0.4722222222222222" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_night_media_dot.xml" value="0.4722222222222222" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_onboarding_background.xml" value="0.34739583333333335" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_onboarding_preview.xml" value="0.5703125" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_onboarding_title.xml" value="0.5703125" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_recycler_item_3.xml" value="0.346875" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_recycler_item_7.xml" value="0.346875" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_recycler_item_bg.xml" value="0.40185185185185185" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/img_unboarding_background.xml" value="0.5703125" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/drawable/span_selector.xml" value="0.5703125" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/font/font.xml" value="0.584375" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_choose_topic.xml" value="0.33" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_course_details.xml" value="0.5" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_home.xml" value="0.5541666666666667" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_menu.xml" value="0.33" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_music.xml" value="0.4547008547008547" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_music_v2.xml" value="0.5" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_onboarding.xml" value="0.33" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_play_option.xml" value="0.25" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_reminders.xml" value="0.5684062059238364" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_sign_in.xml" value="1.5" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_sign_up.xml" value="0.5" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_welcome.xml" value="0.5" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/activity_welcome_sleep.xml" value="0.33" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/content_scrolling.xml" value="0.4925925925925926" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/fragment_meditate_v2.xml" value="0.36414048059149723" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/fragment_sleep.xml" value="0.33" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/fragment_sleep_music.xml" value="0.4925925925925926" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/recycler_view_music_item.xml" value="0.75" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/recycler_view_radio_button_item.xml" value="0.5" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/recycler_view_row_recommendation_item.xml" value="0.67" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/recycler_view_the_ocean_moon.xml" value="0.75" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/recycler_view_vertical_item.xml" value="0.25" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/layout/recycler_view_vertical_layout.xml" value="0.2692502532928065" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/menu/bottom_nav_menu.xml" value="0.5" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/menu/menu_course_details.xml" value="0.4925925925925926" />
+        <entry key="..\:/Android Studio Projects/SilentMoon/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.5069444444444444" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

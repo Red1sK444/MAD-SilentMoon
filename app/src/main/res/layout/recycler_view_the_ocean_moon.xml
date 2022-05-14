@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/itemSleepPreview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_sleep_preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_sleep_lock"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/itemSleepPreview"
+        app:layout_constraintTop_toTopOf="@id/itemSleepPreview"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/itemSleepTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.02"
+        android:text="@string/sleep_preview_title"
+        android:textAlignment="center"
+        android:fontFamily="@font/garamond_premier_pro_bold"
+        android:textColor="@color/night_beige"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="@id/itemSleepPreview"
+        app:layout_constraintEnd_toEndOf="@id/itemSleepPreview"
+        app:layout_constraintTop_toTopOf="@id/itemSleepPreview"/>
+
+    <TextView
+        android:id="@+id/itemSleepDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/sleep_preview_description"
+        android:textAlignment="center"
+        android:textColor="@color/almost_white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/itemSleepTitleTextView"
+        app:layout_constraintStart_toStartOf="@id/itemSleepPreview"
+        app:layout_constraintEnd_toEndOf="@id/itemSleepPreview"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sleepPreviewStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="@color/button_almost_white"
+        android:letterSpacing="0.05"
+        android:paddingTop="11dp"
+        android:paddingBottom="10dp"
+        android:text="@string/sleep_start"
+        android:textAlignment="center"
+        android:textColor="@color/text_black"
+        android:textSize="12sp"
+        app:cornerRadius="25dp"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="@id/itemSleepPreview"
+        app:layout_constraintTop_toBottomOf="@id/itemSleepDescriptionTextView"
+        app:layout_constraintEnd_toEndOf="@id/itemSleepPreview"
+        app:layout_constraintBottom_toBottomOf="@id/itemSleepPreview"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

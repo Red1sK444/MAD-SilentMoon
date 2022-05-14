@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/setTimeHeaderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/reminders_set_time_header"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="32dp" />
+
+        <TextView
+            android:id="@+id/setTimeDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/reminders_set_time_description"
+            android:textColor="@color/text_grey"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setTimeHeaderTextView"
+            app:lineHeight="26dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            style="@style/TimePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="32dp"
+            android:theme="@style/TimePicker"
+            app:layout_constraintBottom_toTopOf="@id/setDayHeaderTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setTimeDescriptionTextView" />
+
+
+        <TextView
+            android:id="@+id/setDayHeaderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="268dp"
+            android:text="@string/reminders_set_day_header"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/setDayDescriptionTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setTimeDescriptionTextView"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:lineHeight="32dp" />
+
+        <TextView
+            android:id="@+id/setDayDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="19dp"
+            android:text="@string/reminders_set_day_description"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_grey"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setDayHeaderTextView"
+            app:lineHeight="26dp" />
+
+        <Button
+            android:id="@+id/dateSaveButton"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/sky_blue"
+            android:text="@string/reminders_save"
+            android:textColor="@color/text_white"
+            app:layout_constraintBottom_toTopOf="@+id/noThanksButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+
+        <Button
+            android:id="@+id/noThanksButton"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/reminders_no_thanks"
+            android:textColor="@color/text_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateSaveButton" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            app:chipSpacingHorizontal="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/dateSaveButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setDayDescriptionTextView">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip10"
+                style="@style/Chip"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:text="@string/reminders_chip_su"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip9"
+                style="@style/Chip"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:text="@string/reminders_chip_m"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip8"
+                style="@style/Chip"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:text="@string/reminders_chip_t"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                style="@style/Chip"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:text="@string/reminders_chip_w"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                style="@style/Chip"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:text="@string/reminders_chip_th"
+                android:textAlignment="center"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                style="@style/Chip"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:text="@string/reminders_chip_f"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="1dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/Chip"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:text="@string/reminders_chip_s"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="1dp" />
+        </com.google.android.material.chip.ChipGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

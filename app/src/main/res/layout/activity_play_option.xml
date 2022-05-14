@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night_black">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/night_scrim"
+            app:layout_scrollFlags="scroll|snap">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_play_option_preview"
+                app:layout_collapseMode="parallax"
+                tools:ignore="ContentDescription" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/playOptionTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/play_option_night_island"
+                android:textAlignment="textStart"
+                android:textColor="@color/night_white"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/playOptionDurationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:letterSpacing="0.05"
+                android:text="@string/play_option_duration"
+                android:textAlignment="textStart"
+                android:textColor="@color/night_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/playOptionTitleTextView" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_night_media_dot"
+                app:layout_constraintBottom_toBottomOf="@id/playOptionDurationTextView"
+                app:layout_constraintEnd_toStartOf="@id/playOptionTypeTextView"
+                app:layout_constraintStart_toEndOf="@id/playOptionDurationTextView"
+                app:layout_constraintTop_toTopOf="@id/playOptionDurationTextView"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/playOptionTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:letterSpacing="0.05"
+                android:text="@string/play_option_sleep_music"
+                android:textColor="@color/night_grey"
+                app:layout_constraintStart_toEndOf="@id/playOptionDurationTextView"
+                app:layout_constraintTop_toBottomOf="@id/playOptionTitleTextView" />
+
+            <TextView
+                android:id="@+id/playOptionDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/play_option_description"
+                android:textAlignment="textStart"
+                android:textColor="@color/night_grey"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/playOptionDurationTextView" />
+
+            <TextView
+                android:id="@+id/playOptionFavoritsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/play_option_favorits"
+                android:textColor="@color/night_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/playOptionDescriptionTextView" />
+
+            <TextView
+                android:id="@+id/playOptionLesteningTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/play_option_lestening"
+                android:textColor="@color/night_white"
+                app:layout_constraintStart_toEndOf="@id/playOptionFavoritsTextView"
+                app:layout_constraintTop_toBottomOf="@id/playOptionDescriptionTextView" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="33dp"
+                android:background="@color/night_grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/playOptionFavoritsTextView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/playOptionRelated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/play_option_related"
+            android:textColor="@color/night_white"
+            android:textSize="24sp"
+            app:layout_scrollFlags="noScroll" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/relatedMusicRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playOptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/sky_blue"
+        android:letterSpacing="0.05"
+        android:paddingVertical="24dp"
+        android:text="@string/play_option_play"
+        android:textColor="@color/text_white"
+        app:cornerRadius="38dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/playOptionDownloadFAB"
+        style="@style/Widget.MaterialComponents.FloatingActionButton.MyFAB"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_music_download"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/playOptionLikeFAB"
+        style="@style/Widget.MaterialComponents.FloatingActionButton.MyFAB"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="90dp"
+        android:src="@drawable/ic_music_like"
+        tools:ignore="ContentDescription" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

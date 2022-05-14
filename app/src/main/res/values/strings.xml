@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Silent Moon</string>
+    <string name="app_name_for_spannable">Silent img Moon</string>
+    <string name="default_username">Afsar</string>
+
+    <string name="onboarding_bold_text">We are what we do</string>
+    <string name="onboarding_bold_text_description">Thousand of people are usign silent\nmoon for smalls meditation</string>
+    <string name="onboarding_already_have_an_account_log_in">ALREADY HAVE AN ACCOUNT? LOG IN</string>
+    <string name="onboarding_button_text">SIGN UP</string>
+
+    <string name="sign_in_already_have_an_account_sign_up">ALREADY HAVE AN ACCOUNT? SIGN UP</string>
+    <string name="sign_in_forgot_password">Forgot Password?</string>
+    <string name="sign_in_log_in">LOG IN</string>
+
+    <string name="hint_password">Password</string>
+    <string name="hint_email_address">Email address</string>
+    <string name="hint_username">Username</string>
+
+    <string name="sign_in_or_log_in_with_email">OR LOG IN WITH EMAIL</string>
+    <string name="sign_in_continue_with_google">CONTINUE WITH GOOGLE</string>
+    <string name="sign_in_continue_with_facebook">CONTINUE WITH FACEBOOK</string>
+    <string name="sign_in_welcome_back">Welcome Back!</string>
+
+    <string name="sign_up_the_privacy_policy">I HAVE READ THE PRIVACE POLICY</string>
+    <string name="sign_up_privacy_policy_text">Тут будет политика конфиденциальности</string>
+    <string name="sign_up_create_your_account">Create your account</string>
+    <string name="sign_up_or_with_email">OR SIGN UP WITH EMAIL</string>
+    <string name="sign_up_welcome_get_started">GET STARTED</string>
+
+    <string name="welcome_hi_to_silent_moon">Hi Afsar, Welcome\n to Silent Moon</string>
+    <string name="welcome_explore_the_app">Explore the app, Find some peace of mind\nto prepare for meditation.</string>
+
+    <string name="choose_topic_header">What Brings you\nto Silent Moon?</string>
+    <string name="choose_topic_description">choose a topic to focuse on:</string>
+
+    <string name="recycler_view_item_1">Reduce Stress</string>
+    <string name="recycler_view_item_2">Improve\nPerformance</string>
+    <string name="recycler_view_item_3">Increase\nHappiness</string>
+    <string name="recycler_view_item_4">Reduce Anxiety</string>
+    <string name="recycler_view_item_5">Personal\nGrowth</string>
+    <string name="recycler_view_item_6">Better Sleep</string>
+    <string name="recycler_view_item_7" />
+    <string name="recycler_view_item_8" />
+    <string name="reminders_chip_su">SU</string>
+    <string name="reminders_chip_m">M</string>
+    <string name="reminders_chip_t">T</string>
+    <string name="reminders_chip_w">W</string>
+    <string name="reminders_chip_th">TH</string>
+    <string name="reminders_chip_f">F</string>
+    <string name="reminders_chip_s">S</string>
+    <string name="reminders_no_thanks">NO THANKS</string>
+    <string name="reminders_save">SAVE</string>
+    <string name="reminders_set_day_description">Everyday is best, but we recommend picking\nat least five.</string>
+    <string name="reminders_set_day_header">Which day would you\nlike to meditate?</string>
+    <string name="reminders_set_time_description">Any time you can choose but We\nrecommend first thing in th morning.</string>
+    <string name="reminders_set_time_header">What time would you\nlike to meditate?</string>
+    <string name="menu_home_item">Home</string>
+    <string name="menu_sleep_item">Sleep</string>
+    <string name="menu_meditate_item">Meditate</string>
+    <string name="menu_music_item">Music</string>
+    <string name="menu_user_item">User</string>
+    <string name="home_daily_duration">3–10 MIN</string>
+    <string name="home_daily_meditation">MEDITATION</string>
+
+    <string name="home_focus">Focus</string>
+    <string name="home_focus_type">MEDITATION</string>
+    <string name="home_focus_duration">3–10 MIN</string>
+
+    <string name="home_happiness">Happiness</string>
+    <string name="home_happiness_type">MEDITATION</string>
+    <string name="home_happiness_duration">3–10 MIN</string>
+    <string name="home_daily_thought">Daily Thought</string>
+    <string name="home_start">START</string>
+    <string name="home_basics">Basics</string>
+    <string name="home_basics_course">COURSE</string>
+    <string name="home_recommended">Recommended for you</string>
+    <string name="home_basics_duration">3–10 MIN</string>
+    <string name="home_relaxation">Relaxation</string>
+    <string name="home_relaxation_music">MUSIC</string>
+    <string name="home_relaxation_duration">3–10 MIN</string>
+    <string name="home_good_morning">Good Morning, Afsar</string>
+    <string name="home_wishes">We Wish you have a good day</string>
+
+    <string name="meditate_7_days_of_calm">7 Days of Calm</string>
+    <string name="meditate_anxiet_release">Anxiet Release</string>
+    <string name="meditate_how_to">How to Meditate</string>
+    <string name="meditate_summer_day" />
+    <string name="tab_all">All</string>
+    <string name="tab_my">My</string>
+    <string name="tab_anxious">Anxious</string>
+    <string name="tab_sleep">Sleep</string>
+    <string name="tab_kids">Kids</string>
+
+    <string name="music_v2_focus_attention">Focus Attention</string>
+    <string name="music_v2_current_time">01:30</string>
+    <string name="music_v2_duration">45:00</string>
+    <string name="music_night_island">Night Island</string>
+    <string name="music_sleep_music">SLEEP MUSIC</string>
+    <string name="music_current_time">01:30</string>
+    <string name="music_duration">45:00</string>
+    <string name="welcome_sleep_title">Welcome to Sleep</string>
+    <string name="welcome_sleep_description">Explore the new king of sleep. It uses sound\nand vesualization to create perfect conditions\nfor refreshing sleep.</string>
+    <string name="welcome_sleep_get_started">GET STARTED</string>
+    <string name="sleep_night_island">Night Island</string>
+    <string name="sleep_sweet_sleep">Sweet Sleep</string>
+    <string name="sleep_moon_clouds">Moon Clouds</string>
+    <string name="sleep_good_night">Good Night</string>
+    <string name="sleep_music_type">SLEEP MUSIC</string>
+    <string name="sleep_music_duration">45 MIN</string>
+    <string name="sleep_description">Soothing bedtime stories to help you fall\ninto a deep and natural sleep</string>
+    <string name="sleep_title">Sleep Stories</string>
+    <string name="sleep_start">START</string>
+    <string name="sleep_preview_description">Non-stop 8- hour mixes of our\nmost popular sleep audio</string>
+    <string name="sleep_preview_title">The Ocean Moon</string>
+
+
+
+
+
+
+
+    <string name="course_details_favorits">\t\t\t24.234 Favorits</string>
+    <string name="course_details_lestening">\t\t\t34.234 Lestening</string>
+
+    <string name="course_details_focus_attention">Focus Attention</string>
+    <string name="course_details_focus_attention_duration">10 MIN</string>
+
+    <string name="course_details_body_scan">Body Scan</string>
+    <string name="course_details_body_scan_duration">5 MIN</string>
+
+    <string name="course_details_making_happiness">Making Happiness</string>
+    <string name="course_details_making_happiness_duration">3 MIN</string>
+    <string name="course_details_happy_morning">Happy Morning</string>
+    <string name="course_details_course">COURSE</string>
+    <string name="course_details_description">Ease the mind into a restful night’s sleep with\nthese deep, amblent tones.</string>
+    <string name="course_details_pick_a_nnrrator">Pick a Nnrrator</string>
+    <string name="course_details_male_voice">MALE VOICE</string>
+    <string name="course_details_female_voice">FEMALE VOICE</string>
+    <string name="play_option_favorits">\t\t\t24.234 Favorits</string>
+    <string name="play_option_lestening">\t\t\t34.234 Lestening</string>
+    <string name="play_option_related">Related</string>
+    <string name="play_option_play">PLAY</string>
+    <string name="play_option_description">Ease the mind into a restful night’s sleep with\nthese deep, amblent tones.</string>
+    <string name="play_option_sleep_music">SLEEP MUSIC</string>
+    <string name="play_option_duration">45 MIN</string>
+    <string name="play_option_night_island">Night Island</string>
+    <string name="sleep_music_title">Sleep Music</string>
+    <string name="meditate_v2_pause_practice">PAUSE PRACTICE</string>
+    <string name="meditate_v2_apr_30">APR 30</string>
+    <string name="meditate_v2_daily_calm">Daily Calm</string>
+    <string name="meditate_v2_description">we can learn how to recognize when our minds\nare doing their normal everyday acrobatics.</string>
+    <string name="meditate_v2_title">Meditate</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:context=".fragments.meditatev2.MeditateV2Fragment">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/dailyCalmGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="dailyCalmPreviewImageView,dailyCalmMusicImageView,dailyCalmTextView,dailyCalmDateTextView,dailyCalmTypeTextView,dailyCalmDotImageView" />
+
+    <TextView
+        android:id="@+id/meditateTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/meditate_v2_title"
+        android:textAlignment="center"
+        android:textColor="@color/text_black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/meditateDescriptionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="30dp" />
+
+    <TextView
+        android:id="@+id/meditateDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/meditate_v2_description"
+        android:textAlignment="center"
+        android:textColor="@color/text_grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tabsRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meditateTitleTextView"
+        app:lineHeight="21dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tabsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/dailyCalmPreviewImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meditateDescriptionTextView" />
+
+    <ImageView
+        android:id="@+id/dailyCalmPreviewImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/img_daily_calm"
+        app:layout_constraintBottom_toTopOf="@+id/meditateReleasesRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabsRecyclerView" />
+
+    <TextView
+        android:id="@+id/dailyCalmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/meditate_v2_daily_calm"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dailyCalmDateTextView"
+        app:layout_constraintStart_toStartOf="@+id/dailyCalmPreviewImageView"
+        app:layout_constraintTop_toTopOf="@+id/dailyCalmPreviewImageView"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:lineHeight="19dp" />
+
+    <TextView
+        android:id="@+id/dailyCalmDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="27dp"
+        android:letterSpacing="0.05"
+        android:text="@string/meditate_v2_apr_30"
+        android:textColor="@color/text_grey_near_black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyCalmPreviewImageView"
+        app:layout_constraintStart_toStartOf="@+id/dailyCalmPreviewImageView"
+        app:layout_constraintTop_toBottomOf="@+id/dailyCalmTextView" />
+
+    <TextView
+        android:id="@+id/dailyCalmTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:letterSpacing="0.05"
+        android:text="@string/meditate_v2_pause_practice"
+        android:textColor="@color/text_grey_near_black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyCalmDateTextView"
+        app:layout_constraintStart_toEndOf="@+id/dailyCalmDateTextView"
+        app:layout_constraintTop_toTopOf="@+id/dailyCalmDateTextView" />
+
+    <ImageView
+        android:id="@+id/dailyCalmDotImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_media_grey_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyCalmTypeTextView"
+        app:layout_constraintEnd_toStartOf="@+id/dailyCalmTypeTextView"
+        app:layout_constraintStart_toEndOf="@+id/dailyCalmDateTextView"
+        app:layout_constraintTop_toTopOf="@+id/dailyCalmTypeTextView"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/dailyCalmMusicImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/ic_daily_calm_music"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyCalmPreviewImageView"
+        app:layout_constraintEnd_toEndOf="@+id/dailyCalmPreviewImageView"
+        app:layout_constraintTop_toTopOf="@+id/dailyCalmPreviewImageView"
+        tools:ignore="ContentDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/meditateReleasesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyCalmPreviewImageView" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

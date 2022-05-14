@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/homeTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:letterSpacing="0.24"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="20dp" />
+
+        <TextView
+            android:id="@+id/goodMorningTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/home_good_morning"
+            android:textColor="@color/text_black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeTitleTextView"
+            app:lineHeight="30dp" />
+
+        <TextView
+            android:id="@+id/goodMorningDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/home_wishes"
+            android:textColor="@color/text_grey"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goodMorningTextView"
+            app:lineHeight="21dp" />
+
+        <ImageView
+            android:id="@+id/homeBasicsImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toStartOf="@+id/homeRelaxationImageView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goodMorningDescriptionTextView"
+            app:srcCompat="@drawable/img_basics"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/homeRelaxationImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="@+id/homeBasicsImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/homeBasicsImageView"
+            app:layout_constraintTop_toTopOf="@+id/homeBasicsImageView"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/img_relaxation"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/homeDailyThoughtImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeBasicsImageView"
+            app:srcCompat="@drawable/img_daily_thought"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/homeDailyDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:letterSpacing="0.05"
+            android:text="@string/home_daily_duration"
+            android:textColor="@color/text_white"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/homeDailyDescriptionTextView"
+            app:layout_constraintStart_toEndOf="@id/homeDailyDescriptionTextView"
+            app:layout_constraintTop_toTopOf="@+id/homeDailyDescriptionTextView" />
+
+        <TextView
+            android:id="@+id/homeRecommendedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/home_recommended"
+            android:textColor="@color/text_black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeDailyThoughtImageView"
+            app:lineHeight="25dp" />
+
+        <TextView
+            android:id="@+id/homeBasicsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="85dp"
+            android:text="@string/home_basics"
+            android:textColor="@color/text_beige"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/homeBasicsImageView"
+            app:layout_constraintTop_toTopOf="@+id/homeBasicsImageView" />
+
+        <TextView
+            android:id="@+id/homeBasicsDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="5dp"
+            android:letterSpacing="0.05"
+            android:text="@string/home_basics_course"
+            android:textColor="@color/text_beige"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@+id/homeBasicsImageView"
+            app:layout_constraintTop_toBottomOf="@+id/homeBasicsTextView" />
+
+        <TextView
+            android:id="@+id/homeBasicsDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:letterSpacing="0.05"
+            android:text="@string/home_basics_duration"
+            android:textColor="@color/text_white"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/homeBasicsButton"
+            app:layout_constraintEnd_toStartOf="@+id/homeBasicsButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@+id/homeBasicsImageView"
+            app:layout_constraintTop_toTopOf="@+id/homeBasicsButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/homeBasicsButton"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="false"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:letterSpacing="0.05"
+            android:paddingStart="15dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="14dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="10dp"
+            android:text="@string/home_start"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            android:textSize="12sp"
+            app:backgroundTint="@color/text_white"
+            app:cornerRadius="25dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/homeBasicsImageView"
+            app:layout_constraintEnd_toEndOf="@+id/homeBasicsImageView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/homeBasicsDurationTextView" />
+
+        <TextView
+            android:id="@+id/homeRelaxTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="85dp"
+            android:text="@string/home_relaxation"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/homeRelaxationImageView"
+            app:layout_constraintTop_toTopOf="@+id/homeRelaxationImageView"
+            app:lineHeight="19dp" />
+
+        <TextView
+            android:id="@+id/homeRelaxDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="5dp"
+            android:letterSpacing="0.05"
+            android:text="@string/home_relaxation_music"
+            android:textColor="@color/text_black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@+id/homeRelaxationImageView"
+            app:layout_constraintTop_toBottomOf="@+id/homeRelaxTextView"
+            app:lineHeight="12dp" />
+
+        <TextView
+            android:id="@+id/homeRelaxDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:letterSpacing="0.05"
+            android:text="@string/home_relaxation_duration"
+            android:textColor="@color/text_black"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/homeRelaxButton"
+            app:layout_constraintEnd_toStartOf="@+id/homeRelaxButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@+id/homeRelaxationImageView"
+            app:layout_constraintStart_toStartOf="@+id/homeRelaxationImageView"
+            app:layout_constraintTop_toTopOf="@+id/homeRelaxButton"
+            app:lineHeight="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/homeRelaxButton"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/text_black"
+            android:clickable="false"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:letterSpacing="0.05"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="14dp"
+            android:paddingBottom="11dp"
+            android:text="@string/home_start"
+            android:textAlignment="center"
+            android:textColor="@color/text_white"
+            android:textSize="12sp"
+            app:cornerRadius="29dp"
+            app:layout_constraintBottom_toBottomOf="@+id/homeRelaxationImageView"
+            app:layout_constraintEnd_toEndOf="@+id/homeRelaxationImageView"
+            app:layout_constraintStart_toEndOf="@+id/homeRelaxDurationTextView" />
+
+        <TextView
+            android:id="@+id/homeDailyTextView"
+            android:layout_width="110dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="27dp"
+            android:text="@string/home_daily_thought"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/homeDailyDescriptionTextView"
+            app:layout_constraintStart_toStartOf="@+id/homeDailyThoughtImageView"
+            app:layout_constraintTop_toTopOf="@+id/homeDailyThoughtImageView"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:lineHeight="19dp" />
+
+        <TextView
+            android:id="@+id/homeDailyDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="27dp"
+            android:letterSpacing="0.05"
+            android:text="@string/home_daily_meditation"
+            android:textColor="@color/text_white"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/homeDailyThoughtImageView"
+            app:layout_constraintStart_toStartOf="@+id/homeDailyThoughtImageView"
+            app:layout_constraintTop_toBottomOf="@+id/homeDailyTextView" />
+
+        <ImageButton
+            android:id="@+id/homeMusicPlayImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="@+id/homeDailyThoughtImageView"
+            app:layout_constraintEnd_toEndOf="@+id/homeDailyThoughtImageView"
+            app:layout_constraintTop_toTopOf="@+id/homeDailyThoughtImageView"
+            app:srcCompat="@drawable/ic_daily_thought_music"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/homeMediaDotImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/homeDailyDurationTextView"
+            app:layout_constraintEnd_toStartOf="@id/homeDailyDurationTextView"
+            app:layout_constraintStart_toEndOf="@id/homeDailyDescriptionTextView"
+            app:layout_constraintTop_toTopOf="@id/homeDailyDurationTextView"
+            app:srcCompat="@drawable/img_media_white_dot"
+            tools:ignore="ContentDescription" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommendedListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/homeRecommendedTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_music_v2">
+
+    <TextView
+        android:id="@+id/musicV2NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music_v2_focus_attention"
+        android:textAlignment="center"
+        android:textColor="@color/text_black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/musicV2AuthorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:letterSpacing="0.05"
+        android:text="@string/meditate_7_days_of_calm"
+        android:textAlignment="center"
+        android:textColor="@color/text_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicV2NameTextView" />
+
+    <ImageButton
+        android:id="@+id/musicV2LikeImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/musicV2DownloadImageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_white_like"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/musicV2DownloadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_white_download"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/musicV2PauseImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/musicV2SeekBar"
+        app:layout_constraintEnd_toStartOf="@+id/musicV2RewindForImageButton"
+        app:layout_constraintStart_toEndOf="@+id/musicV2RewindBackImageButton"
+        app:layout_constraintTop_toBottomOf="@id/musicV2AuthorTextView"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_black_pause"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/musicV2RewindBackImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/musicV2PauseImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/musicV2PauseImageButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/musicV2PauseImageButton"
+        app:srcCompat="@drawable/ic_grey_rewind_backward"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/musicV2RewindForImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/musicV2PauseImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/musicV2PauseImageButton"
+        app:layout_constraintTop_toTopOf="@+id/musicV2PauseImageButton"
+        app:srcCompat="@drawable/ic_grey_rewind_forward"
+        tools:ignore="ContentDescription" />
+
+    <SeekBar
+        android:id="@+id/musicV2SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:maxHeight="4dp"
+        android:minHeight="4dp"
+        android:progress="15"
+        android:progressDrawable="@drawable/ic_music_v2_seekbar"
+        android:thumb="@drawable/ic_seekbar_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicV2PauseImageButton" />
+
+    <TextView
+        android:id="@+id/mucisV2CurrentTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/music_v2_current_time"
+        android:textColor="@color/text_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/musicV2MusicDurationTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicV2SeekBar" />
+
+    <TextView
+        android:id="@+id/musicV2MusicDurationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/music_v2_duration"
+        android:textColor="@color/text_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mucisV2CurrentTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/musicV2SeekBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

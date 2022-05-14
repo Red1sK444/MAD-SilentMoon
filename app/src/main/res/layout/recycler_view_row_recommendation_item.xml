@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/itemPreviewImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/itemTitleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/img_focus"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/itemTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/home_focus"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/itemTypeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemPreviewImageView"
+        app:lineHeight="19dp" />
+
+    <TextView
+        android:id="@+id/itemTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:letterSpacing="0.05"
+        android:text="@string/home_focus_type"
+        android:textColor="@color/text_grey"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemTitleTextView" />
+
+    <TextView
+        android:id="@+id/itemDurationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:letterSpacing="0.05"
+        android:text="@string/home_focus_duration"
+        android:textColor="@color/text_grey"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/itemTypeTextView"
+        app:layout_constraintStart_toEndOf="@+id/itemTypeTextView"
+        app:layout_constraintTop_toTopOf="@+id/itemTypeTextView" />
+
+    <ImageView
+        android:id="@+id/itemMediaDotImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/itemDurationTextView"
+        app:layout_constraintEnd_toStartOf="@+id/itemDurationTextView"
+        app:layout_constraintStart_toEndOf="@+id/itemTypeTextView"
+        app:layout_constraintTop_toTopOf="@+id/itemDurationTextView"
+        app:srcCompat="@drawable/img_media_white_dot"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
